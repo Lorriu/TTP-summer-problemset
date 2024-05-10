@@ -11,7 +11,7 @@ public class Prime {
     public static boolean isPrime(int n) {
         // write your code here
 
-        return 0; // replace 0 with the correct return value
+        return false; // replace 0 with the correct return value
     }
 
     public static void main(String[] args) {
