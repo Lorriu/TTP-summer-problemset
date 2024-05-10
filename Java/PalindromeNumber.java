@@ -15,6 +15,7 @@
 import static java.lang.Math.floor;
 import static java.lang.Math.log10;
 
+@SuppressWarnings("unused")
 public class PalindromeNumber {
     // Write your function here
 
