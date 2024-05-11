@@ -6,7 +6,7 @@
     *   A prime number is a number that is only divisible by 1 and itself.
     *   A prime number cannot be negative, 0, or 1.
 """
-
+from math import isqrt # integer square root
 def isPrime(num: int) -> bool:
     ...
     # Write your code here
