@@ -17,7 +17,7 @@ def check(func):
     assert func(51) == False
     assert func(97) == True
     print("PASSED")
-    return True
+    return func
 
 @check
 def isPrime(num: int) -> bool:
