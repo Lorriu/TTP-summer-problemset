@@ -7,6 +7,19 @@
     *   A prime number cannot be negative, 0, or 1.
 """
 from math import isqrt # integer square root
+def check(func):
+    assert func(2) == True
+    assert func(3) == True
+    assert func(4) == False
+    assert func(5) == True
+    assert func(11) == True
+    assert func(41) == True
+    assert func(51) == False
+    assert func(97) == True
+    print("PASSED")
+    return True
+
+@check
 def isPrime(num: int) -> bool:
     ...
     # Write your code here
