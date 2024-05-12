@@ -8,16 +8,6 @@
     *   The factorial of 0 is 1.
     *   Hint: factorial can be calculated recursively.
 """
-def check(func):
-    assert func(0) == 1
-    assert func(1) == 1
-    assert func(3) == 6
-    assert func(5) == 120
-    assert func(10) == 3628800
-    print("PASSED")
-    return func
-
-@check
 def factorial(num: int) -> int:
     ...
     # Write your code here

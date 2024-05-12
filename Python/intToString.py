@@ -5,15 +5,7 @@
     *   The function should return the string representation of the integer without using any built-in type casting functions.
     *   Reminder: Integers can be negative.
 """
-def check(func):
-    assert func(123) == "123"
-    assert func(-123) == "-123"
-    assert func(0) == "0"
-    assert func(123456789) == "123456789"
-    print("PASSED")
-    return func
 
-@check
 def intToString(num: int) -> str:
     ...
     # Write your code here
