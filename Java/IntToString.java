@@ -18,6 +18,6 @@ public class IntToString {
         System.out.println(intToString(123)); // Expected output: "123"
         System.out.println(intToString(-123)); // Expected output: "-123"
         System.out.println(intToString(0)); // Expected output: "0"
-        System.out.println(intToString(123456789L)); // Expected output: "123456789"
+        System.out.println(intToString(123456789)); // Expected output: "123456789"
     }
 }
