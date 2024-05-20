@@ -7,10 +7,14 @@
 */
 
 public class IntToString {
-    public static String intToString(long num) {
+    public static String intToString(int num) {
         // Write your code here
+        
+        //collect number and turn into string
+        String StringNumber = Integer.toString(num);
 
-        return ""; // Modify this line to return the string representation of the integer
+
+        return StringNumber; // Modify this line to return the string representation of the integer
     }
 
     public static void main(String[] args) {
