@@ -12,8 +12,11 @@
 public class Factorial {
     public static long factorial(int n) {
         // write your code here
+        if (n == 0) 
+            return 1; 
 
-        return 0; // replace 0 with the correct return value
+        return n * factorial(n - 1); // replace 0 with the correct return value
+
     }
 
     public static void main(String[] args) {
