@@ -14,11 +14,26 @@
 
 public class Fibonacci {
     // Write your function here
+    static int fibonacci(int fibNumber){
+
+    //if int collected is lessthan or equal to 1 return int
+    if (fibNumber <= 1)
+        return fibNumber;
+    
+    //Return recursive call
+    return fibonacci(fibNumber - 1) + fibonacci(fibNumber - 2);
+
+    }
 
     public static void main(String[] args) {
         // Call your function with the number of
         // Fibonacci numbers you would like to generate
+        int N = 10;
 
+        //the interger starts at 0 and as long as i is less N increment + 1 through the numbers
+        for (int i = 0; i < N; i++){
+            System.out.print(fibonacci(i) + " ");
+        }
         
     }
 }
