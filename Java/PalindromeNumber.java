@@ -46,20 +46,8 @@ public class PalindromeNumber {
 
     public static void main(String[] args) {
         // Call your function with the number you would like to check
-        int number1 = 12321;
-        int number2 = 43567;
-
-        if (isPalindrome(number1)){
-            System.out.println(number1 + " is a Palindrome");
-        } else {
-            System.out.println(number1 + " is not a Palindrome number");
-        }
-
-        if (isPalindrome(number2)){
-            System.out.println(number2 + " is a Palindrome");
-        } else {
-            System.out.println(number2 + " is not a Palindrome number");
-        }
-
+        System.out.println(isPalindrome(12321));
+        System.out.println(isPalindrome(43567));
+        System.out.println(isPalindrome(34543));
     }
 }
