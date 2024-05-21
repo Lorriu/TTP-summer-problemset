@@ -11,7 +11,17 @@ public class Prime {
     public static boolean isPrime(int n) {
         // write your code here
 
-        return false; // replace 0 with the correct return value
+        //if n less than or equal to 1 false
+        if (n <= 1)
+            return false;
+
+        //start at 2 and incrrement by 1 to check, until i is less n
+        for (int i = 2; i < n; i++)
+            //if n is divisble by i and there nothing left over then false
+            if (n % i == 0)
+                return false; // replace 0 with the correct return value
+
+        return true;
     }
 
     public static void main(String[] args) {
