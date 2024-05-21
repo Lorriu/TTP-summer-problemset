@@ -11,7 +11,22 @@ import java.util.ArrayList;
 
 public class ReverseArray {
     // Write your function here
+    
+    //swap the first elemnt of array with the last element; second element with second last etc.
+    public static void reverseArray(ArrayList<Integer> list) {
+        
+        //collect the size of the list
+        int size = list.size();
+        
+        //Iterate through half the array and swap numbers from both sides
+        for (int i = 0; i < size/2; i++) {
+            int temp = list.get(i);
+            list.set(i, list.get(size - 1 - i));
+            list.set(size - 1 - i, temp);
+        }
+    }
 
+    
 
     
     public static void main(String[] args) {
@@ -23,7 +38,7 @@ public class ReverseArray {
         // Call your function, passing in the numbers ArrayList as an argument
         // Write your function call here
 
-
+       reverseArray(numbers);
 
         // Do not modify the code below
         for (int i = 0; i < numbers.size(); i++) {
@@ -32,5 +47,6 @@ public class ReverseArray {
             }
         }
         
+       // System.out.println(numbers);
     }
 }
